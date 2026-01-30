@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGear AI | Support Assistant</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>TechGear AI</h1>
+            <div class="status-indicator">
+                <div class="dot"></div>
+                <span>Gemini 2.5 Active</span>
+            </div>
+        </header>
+
+        <div id="chat-history">
+            <div class="message bot">
+                Hello! I'm your TechGear support assistant. How can I help you with our products today?
+                <div class="msg-meta">Just now</div>
+            </div>
+        </div>
+
+        <div class="typing-indicator" id="typing">
+            <span></span><span></span><span></span>
+        </div>
+
+        <form class="input-area" id="chat-form">
+            <input type="text" id="user-input" placeholder="Ask about products, features, or support..." autocomplete="off">
+            <button type="submit" id="send-btn">
+                <span>Send</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+        </form>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
